@@ -1,0 +1,4 @@
+name: ItemInsurance
+version: '${version}'
+main: com.jacky8399.iteminsurance.ItemInsurance
+api-version: 1.18
