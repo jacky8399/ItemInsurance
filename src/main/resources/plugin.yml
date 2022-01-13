@@ -2,3 +2,17 @@ name: ItemInsurance
 version: '${version}'
 main: com.jacky8399.iteminsurance.ItemInsurance
 api-version: 1.18
+commands:
+  iteminsurance:
+    permission: iteminsurance.command
+    aliases: ["insurance"]
+
+permissions:
+  iteminsurance.*:
+    default: op
+    children:
+      iteminsurance.command.*: true
+  iteminsurance.command.claim:
+    default: true
+  iteminsurance.plans.*:
+    default: true
